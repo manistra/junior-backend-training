@@ -30,3 +30,8 @@ export interface Nickname extends Rule
 {
     type: 'nickname';
 }
+export interface ValidationStatus
+{
+    valid: boolean,
+    msg: string
+}
