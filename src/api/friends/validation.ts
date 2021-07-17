@@ -1,5 +1,5 @@
 
-import { FriendsAttributes } from '../../../models/friends';
+import { FriendsAttributes } from '../../../db/models/friends';
 import { Status } from '../../validation/types';
 import { ValidationStatus } from '../../validation/types';
 import

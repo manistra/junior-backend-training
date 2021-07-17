@@ -1,8 +1,8 @@
 
 import * as Router from "koa-router";
-import { friends } from '../../../models';
+import { friends } from '../../../db/models';
 import { v4 as uuidv4 } from 'uuid';
-import { FriendsAttributes } from '../../../models/friends';
+import { FriendsAttributes } from '../../../db/models/friends';
 import { validateNewFriend } from './validation'
 import { ParameterizedContext } from 'koa';
 
