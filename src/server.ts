@@ -1,5 +1,5 @@
 import * as Koa from "koa";
-import { dbAuthenticate } from '../db/config/database.config'
+import { dbAuthenticate } from '../db/database'
 import * as logger from "koa-logger";
 import * as json from "koa-json";
 import * as bodyParser from "koa-bodyparser"

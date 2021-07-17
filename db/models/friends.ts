@@ -1,5 +1,5 @@
 'use strict';
-import { db } from '../config/database.config';
+import { db } from '../database';
 
 
 const { Model } = require('sequelize');
