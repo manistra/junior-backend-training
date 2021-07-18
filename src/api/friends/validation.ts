@@ -21,7 +21,7 @@ const validateNickname = (name: string): Status =>
     return validate(name, [nickname()]);
 };
 
-export const validateNewFriend = (newFriend: FriendsAttributes): ValidationStatus =>
+export const NewFriend = (newFriend: FriendsAttributes): ValidationStatus =>
 {
     const firstNameValidation = validateName(newFriend.first_name);
     const lastNameValidation = validateName(newFriend.last_name);
