@@ -1,4 +1,4 @@
-import * as Koa from "koa";
+import Koa from "koa";
 import { dbAuthenticate } from '../db/database'
 import * as logger from "koa-logger";
 import * as json from "koa-json";

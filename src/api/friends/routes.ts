@@ -1,6 +1,6 @@
 
 import * as Router from "koa-router";
-import * as friends from './index'
+import friends from './controller'
 
 const router = new Router({ prefix: '/friends' })
 

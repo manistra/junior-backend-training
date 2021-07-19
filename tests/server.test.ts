@@ -1,6 +1,6 @@
-import app from '../server';
+import app from '../src/server';
 import * as request from 'supertest';
-import { friends } from '../../db/models';
+import { friends } from '../db/models';
 
 
 test('Get all friends', async () =>

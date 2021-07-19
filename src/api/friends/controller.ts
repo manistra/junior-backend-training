@@ -1,12 +1,12 @@
 
-import * as Router from "koa-router";
+import Router from "koa-router";
 import { friends } from '../../../db/models';
 import { v4 as uuidv4 } from 'uuid';
 import { FriendsAttributes } from '../../../db/models/friends';
-import * as validate from './validation'
+import validate from './validation'
 import { ParameterizedContext } from 'koa';
 
-export const postNewFriend = async (ctx: ParameterizedContext<any, Router.IRouterParamContext<any, {}>, any>) =>
+const postNewFriend = async (ctx: ParameterizedContext<any, Router.IRouterParamContext<any, {}>, any>) =>
 {
     const id = uuidv4();
     try
@@ -30,7 +30,7 @@ export const postNewFriend = async (ctx: ParameterizedContext<any, Router.IRoute
     }
 };
 
-export const getAllFriends = async (ctx: ParameterizedContext<any, Router.IRouterParamContext<any, {}>, any>) =>
+const getAllFriends = async (ctx: ParameterizedContext<any, Router.IRouterParamContext<any, {}>, any>) =>
 {
     try
     {
@@ -43,3 +43,5 @@ export const getAllFriends = async (ctx: ParameterizedContext<any, Router.IRoute
     }
 
 };
+
+export default { postNewFriend, getAllFriends }
