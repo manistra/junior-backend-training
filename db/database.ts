@@ -1,6 +1,6 @@
 import { Sequelize } from 'sequelize';
 
-export const db = new Sequelize('postgres://postgres:password@localhost:5432/db')
+export const db = new Sequelize('postgres://postgres:password@db:5432/db')
 
 export const dbAuthenticate = async () =>
 {
